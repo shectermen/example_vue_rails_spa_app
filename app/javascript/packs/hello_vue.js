@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 
+
 // The above code uses Vue without the compiler, which means you cannot
 // use Vue to target elements in your existing html templates. You would
 // need to always use single file components.
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // comment out the above code and uncomment the below
 // Add <%= javascript_pack_tag 'hello_vue' %> to your layout
 // Then add this markup to your html template:
-//
+
 // <div id='hello'>
 //   {{message}}
 //   <app></app>
