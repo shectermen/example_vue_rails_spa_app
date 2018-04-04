@@ -1,0 +1,15 @@
+development: &base
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: vue_development
+  pool:     5
+  username: sergej
+  password: 
+
+staging:
+  <<: *base
+
+test:
+  <<: *base
+  database: vue_test
