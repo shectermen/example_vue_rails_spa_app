@@ -3,16 +3,14 @@ html
   head
     title 
       |Myapp
-    script src="https://cdn.jsdelivr.net/npm/vue"
-    = csrf_meta_tags 
-    = javascript_pack_tag 'hello_vue' 
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' 
     
+    = csrf_meta_tags 
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' 
+    = javascript_pack_tag 'hello_vue'
     = javascript_pack_tag 'application' 
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload' 
   
 
   body
     = yield 
-  
-
+     
